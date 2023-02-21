@@ -16,13 +16,6 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
-  pointer-events: none;
-
-  -webkit-touch-callout: none;
-  user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
 }
 
 body {
@@ -33,15 +26,9 @@ body {
   margin: 0px;
 }
 
-/* 이미지 드래그 방지 */
 img {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 html {
@@ -87,6 +74,7 @@ header.sticky {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  pointer-events: none;
 }
 
 .mossi {
@@ -125,7 +113,7 @@ header.sticky {
 }
 
 .mubtn:hover {
-  color: #ad9644;
+  color: #ffda54;
 }
 
 section.content {
@@ -146,12 +134,16 @@ section.content {
   position: absolute;
   width: 480px;
   left: 50%;
-  margin-left: -225px;
-  height: 40px;
   top: 50%;
-  margin-top: -20px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  /* margin-left: -225px; */
+  /* height: 40px; */
+  /* margin-top: -20px; */
 }
-
+.loop-text {
+  width: 275px;
+}
 p {
   display: inline-block;
   vertical-align: top;
@@ -187,7 +179,7 @@ p {
 }
 
 .mtcolor {
-  color: #ad9644;
+  color: #ffda54;
   text-shadow: 5px 5px 10px black;
 }
 
